@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="{:U('index/loaninfolist')}" method="get">
+    <center>
+    <table>
+        <script language="javascript" type="text/javascript" src="__PUBLIC__/carlender/WdatePicker.js"></script>
+        <input class="Wdate" name="day" type="text" onClick="WdatePicker()">
+        <input type="submit" value="搜索" />
+        <tr>
+            <td>编号</td>
+            <td>名称</td>
+            <td>标的金额</td>
+            <td>类型</td>
+            <td>期限</td>
+            <td>时间</td>
+        </tr>
+        <foreach name="data" item="vo" >
+        <tr>
+            <td>{$vo.bid}</td>
+            <td>{$vo.b_title}</td>
+            <td>{$vo.b_money}</td>
+            <td>{$vo.b_type}</td>
+            <td>{$vo.b_mumber}</td>
+            <td>{$vo.b_time}</td>
+        </tr>
+        </foreach>
+    </table>
+    </center>
+</form>
+</body>
+</html>

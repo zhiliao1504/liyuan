@@ -1,0 +1,23 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="<?php echo U('index/getCustomerInfo');?>" method="post">
+    <table>
+        <tr>
+            <td>电话</td>
+            <td><input type="text" name="tel"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="搜索"/></td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
