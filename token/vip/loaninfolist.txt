@@ -1,0 +1,5 @@
+Array
+(
+    [day] => 2017-05-14
+    [token] => fdcf800d535a366c9e9bd19ca5698711
+)
